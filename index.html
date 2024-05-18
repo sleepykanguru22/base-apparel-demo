@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./images/logo.svg" alt="base apparel logo" />
+    </header>
+    <picture>
+      <source media="(min-width:800px )" srcset="./images/hero-desktop.jpg" />
+      <img
+        class="hero-image"
+        src="./images/hero-mobile.jpg"
+        alt="a woman in an orange shirt"
+      />
+    </picture>
+    <main>
+      <h1><span> We're </span>coming soon</h1>
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our
+        launch deals.
+      </p>
+      <form action="#">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          value=""
+          placeholder="Email Address"
+        />
+
+        <svg
+          class="error-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <g fill="none" fill-rule="evenodd">
+            <circle cx="12" cy="12" r="12" fill="#F96464" />
+            <path
+              fill="#FFF"
+              fill-rule="nonzero"
+              d="M13.256 6v9.056h-2V6h2zm-.944 12.464c-.384 0-.699-.104-.944-.312a1.027 1.027 0 0 1-.368-.824c0-.33.125-.608.376-.832.25-.224.563-.336.936-.336.373 0 .68.112.92.336.24.224.36.501.36.832 0 .341-.117.616-.352.824-.235.208-.544.312-.928.312z"
+            />
+          </g>
+        </svg>
+        <button aria-label="submit buttion">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
+            <path
+              fill="none"
+              stroke="#FFF"
+              stroke-width="2"
+              d="M1 1l8.836 8.836L1 18.671"
+            />
+          </svg>
+        </button>
+        <p class="error-text">Please provide a valid email</p>
+      </form>
+    </main>
+
+    <!--   
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+    <script src="script.js"></script>
+  </body>
+</html>

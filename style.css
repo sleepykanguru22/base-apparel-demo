@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-font: "Josefin Sans", sans-serif;
+  --primary-desaturated: hsl(0, 36%, 70%);
+  --primary-soft: hsl(0, 93%, 68%);
+  --neutral-dark: hsl(0, 6%, 24%);
+  --light-gradient: 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+  --btn-gradient: 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%);
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--primary-font);
+  font-weight: 400;
+}
+
+.logo {
+  margin: 2em 0;
+  width: 6em;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 3rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  max-width: 15.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75rem;
+  font-weight: 600;
+  font-size: 2.5em;
+  color: var(--neutral-dark);
+}
+
+h1 span {
+  font-weight: 300;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 0.9em;
+}
+
+form {
+  position: relative;
+  height: 50px;
+  width: 90%;
+}
+
+form > * {
+  position: absolute;
+}
+label {
+  visibility: hidden;
+}
+
+input {
+  height: inherit;
+  width: 100%;
+  left: 0;
+  outline: none;
+  border: 1px solid hsla(0, 36%, 70%, 0.589);
+  border-radius: 50px;
+  text-indent: 30px;
+  font-family: var(--primary-font);
+}
+
+input::placeholder {
+  opacity: 0.8;
+}
+
+button {
+  right: -2px;
+  cursor: pointer;
+  height: 52px;
+  width: 70px;
+  border: none;
+  border-radius: 50px;
+  background-image: linear-gradient(var(--btn-gradient));
+  box-shadow: 0px 10px 20px hsla(0, 74%, 74%, 0.514);
+  transition: 0.3s ease box-shadow, 0.3s ease transform;
+}
+
+button:hover {
+  background-image: linear-gradient(135deg, hsl(0, 68%, 88%), hsl(0, 65%, 79%));
+  box-shadow: 0px 20px 20px hsla(0, 70%, 82%, 0.514);
+  transform: scale(1.05);
+}
+
+.error-icon {
+  right: 60px;
+  padding: 15px;
+}
+.error-text {
+  padding-top: 60px;
+  text-indent: 30px;
+  color: var(--primary-soft);
+}
+
+.error {
+  border: 2px solid var(--primary-soft);
+}
+
+.error-icon,
+.error-text {
+  display: none;
+}
+
+header,
+main {
+  margin: 0 1.5em;
+}
+h1,
+p:not([class]) {
+  margin-bottom: 1rem;
+}
+
+h1 span,
+p:not([class]),
+input::placeholder {
+  color: var(--primary-desaturated);
+}
