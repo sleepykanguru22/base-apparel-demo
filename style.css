@@ -137,3 +137,52 @@ p:not([class]),
 input::placeholder {
   color: var(--primary-desaturated);
 }
+
+@media (min-width: 800px) {
+  body {
+    background: url(./images/bg-pattern-desktop.svg) center/cover;
+    display: grid;
+    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+    height: 100vh;
+    overflow: hidden;
+  }
+  picture {
+    grid-row: 1/-1;
+    grid-column: 8/-1;
+  }
+  header {
+    grid-row: 2;
+    grid-column: 2/7;
+  }
+  .logo {
+    width: initial;
+  }
+  main {
+    grid-row: 5;
+    grid-column: 2/6;
+    text-align: left;
+    justify-content: start;
+    align-items: start;
+  }
+  h1 {
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    line-height: 1.2;
+  }
+  button {
+    width: 90px;
+  }
+
+  .error-icon {
+    right: 80px;
+  }
+  p:not([class]),
+  form {
+    width: 400px;
+  }
+
+  h1,
+  p:not([class]) {
+    margin-bottom: 2rem;
+  }
+}
